@@ -56,7 +56,7 @@ Temos como resultado:
 <class 'bool'>
 ```
 Ou seja, ele diz que a classe nome é "string
-iudade é int = inteiro
+idade é int = inteiro
 e o preco é float, ou seja flutuante
 o aposentado é 'bool', ou seja boleeano
 ---
