@@ -355,17 +355,33 @@ print (f" O valor total é de: R${valorTotal:.2f}")
 print (f" O valor total com desconto é de: R${valorTotalComDesconto:.2f}")
 
 ```
+## - 01/10/2025 AULA 5 -  Formatação de Strings
+
+OBS: Material está no classrom
+
+### Combinando Strings
+
+1- alternativa: usando f-strings : ("f  {} ")
+  ex:  ("f  {} ")
 ```py
-
+idade = 36
+mensagem = f"Eu tenho {idade} anos de idade."
+print (mensagem)
 ```
+A variávem mensagem vai armazenar o valor da idade também pois ela está linkada com a variável idade
 
+EX 2:
 ```py
-
+mensagem = f"o produto custa {2*6} reais"
+print (mensagem)
 ```
+Aqui a variável "mensagem" armazena o cálculo ( a máquina fará um calculo ali, não é como simplesmente entregar o um caractere representando o número)
 
+ex3: 
 ```py
-
+print (f"o produto custa {2*6} reais")
 ```
+Nesse caso não é armazenado em nenhuma variável, apenas realiza o cálculo e mostra.
 ```py
 
 ```
