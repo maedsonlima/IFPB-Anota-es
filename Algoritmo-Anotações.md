@@ -382,36 +382,104 @@ ex3:
 print (f"o produto custa {2*6} reais")
 ```
 Nesse caso não é armazenado em nenhuma variável, apenas realiza o cálculo e mostra.
+
+---
+
+## - Formatando valores
+
+Basta adicionar dois pontos seguidos por um tipo de formatação como .2f, que siginifica que o número deve ser tratado como um float com duas casas decimais. 
+
+ex:
 ```py
+preco = 61
+print (f"o produto custa {preco:.2f} reais")
+ ```
+vai imprimir o número 61.00
+
+ex2:
+```py
+preco = 31.946
+print (f"o produto custa {preco:.2f} reais")
+```
+Vai imprimir 31.95
+
+ex3:
+```py
+preco = 31.9412
+print (f"o produto custa {preco:.2f} reais")
+```
+imprime 31.94
+
+OBS: Quando pedimos para diminuir as casas decimais, ele vai ARREDONDAR para o valor mais adequado
+
+ex: 
+
+31.946 = ficará 31.95
+31.945 = ficará 31.94
+
+---
+## - Caracteres de escape
+
+Serve para imprimir caracteres não permitidos em uma string
+
+usamos uma barra invertida para possibilitar: \ 
+
+ex:
+```py
+texto = "Tenho "sorte" na vida"
+```
+note que "sorte" tem aspas dentro de outras aspas e não pode, não  imprimiria elas, então usamos a \
+```py
+texto ="Tenho \"sorte\" na vida"
+print (texto)
+```
+Dessa forma ele vai desconsiderar as aspas para algum fim de programação e vai  imprimir o texto completo.
+
+OBS: a primeira barra e segunda barras são antes das 1 e 2 aspas respectivamente.
+
+SEMPRE QUE QUISER USAR UM SIMBOLO QUE NÃO PODERIA, USE \ ANTES DELE.
+
+---
+## - OUTRAS FORMATAÇÕES PARA O TEXTO:
+
+\t = faz uma tabulação no texto, onde quiser, pode usar várias vezes inclusive
+\n = pula uma linha.
+\\ = imprime uma barra invertida.
+
+```py
+textoSemTabuacao = "texto sem tabulação"
+textoComTabuacao = "\t texto sem tabulação"
 
 ```
+Vai imprimir 
 
+texto sem tabulação
+         texto sem tabulação
+         
+A tabulação vai gerar um espaço no início.
+
+
+### - /n = pulando linha
 ```py
-
+print ("\nLinha 1 \nLinha 2 \nLinha 3")
 ```
+Saida:
 
+Linha 1 
+Linha 2 
+Linha 3
+
+Ele vai pular uma linha naquela palavra em específico.
+
+---
+### - Imprimindo uma \ invertida, é muito útil para informar caminhos de pastas no computador
+
+ex: 
+print ("O arquivo está na pasta: C:\\usuario\\documentos")
 ```py
-
+print ("O arquivo está na pasta: C:\\usuario\\documentos")
 ```
-```py
-
-```
-
-```py
-
-```
-
-```py
-
-```
-```py
-
-```
-
-```py
-
-```
-
+Nesse caso colocamos 2 barras, para poder mostrar uma, pois se colocarmos só 1, ele não vai mostrar nada, pois a barra já é usada para transformar simbolos em caracteres, então usando outra, podemos escrever o caminho da pasta sem problemas, ou até meesmo uma barra \\ da forma que quiser.
 ```py
 
 ```
