@@ -524,15 +524,62 @@ Temos como resultado:
 3
 1
 ---
+## - Operadores Relacionais
 
+Serve para comparar Strings, números, são eles: 
+
+Maior          >
+Maior igual    >=
+Menor          <
+Menor igual    <=
+Igualdade      ==
+Diferente      !=
+
+Seu resultado é sempre um valor 'BOOLEANO'
+
+EX:
 ```py
+print(10 > 5)
+print(256 < 257)
+print(997 <= 998)
+print(22 != 23)
+print(37 == 38)
+print('Maria' == 'Pedro’)
+print(‘Maria’ == ‘maria’)
+print(‘Pedro' == 'Pedro’)
+```
+Temos como resultado:
+
+True =  10 é maior que 5
+True =  256 é menor que 257
+True = 997 é menor ou igul a 998
+True = 22 é diferente de 23
+False = 37 não é igual a 38
+False  = maria  não é igual a Pedro
+False = Maria não é igual a maria (Case sensitive)
+True =  Pedro é igual a Pedro
+
+---
+## OPERADORES LÓGICOS 
+
+Servem para combinar resultados de expressões, retornando se
+o resultado final é verdadeiro ou falso.
+
+Operação booleana E 'AND'
+Operação booleana OU 'OR'
+Operação booleana de negação 'NOT'
+
+EX: 
+```py
+2 < 9 and 4 == 5 and 6 > 1
 
 ```
+Resolução
+2 é menor que 9 = Verdadeiro
+4 é diferente de 5 = false
+6 é maior que 1  = verdadeiro
 
-```py
-
-```
-
+como a proposição é AND, logo resultado é FALSO!
 ```py
 
 ```
