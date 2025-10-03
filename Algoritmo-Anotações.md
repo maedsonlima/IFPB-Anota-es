@@ -480,9 +480,51 @@ print ("O arquivo está na pasta: C:\\usuario\\documentos")
 print ("O arquivo está na pasta: C:\\usuario\\documentos")
 ```
 Nesse caso colocamos 2 barras, para poder mostrar uma, pois se colocarmos só 1, ele não vai mostrar nada, pois a barra já é usada para transformar simbolos em caracteres, então usando outra, podemos escrever o caminho da pasta sem problemas, ou até meesmo uma barra \\ da forma que quiser.
-```py
 
+---
+---
+## - OPERADORES ARITMÉTICOS
+
+
+- Adição                        +
+
+- Subtração                     -
+
+- Multiplicação                 *
+
+- Exponenciação                 **
+
+- Divisão                       /
+
+- Parte inteira da Divisão     //
+
+- Resto da divisão             %
+
+ex:
+```py
+print(4+5*2)
+
+print((4+5)*2)
+
+print(3*3)
+
+print(3**3)
+
+print(10/3)
+
+print(10//3)
+
+print(10%3)
 ```
+Temos como resultado:
+18
+9
+27
+3.3333333333333335
+3
+1
+---
+
 ```py
 
 ```
