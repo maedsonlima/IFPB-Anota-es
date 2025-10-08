@@ -642,13 +642,36 @@ c) O correspondente a 35 % do valor de B
 a = int(input("Insira o primeiro número: "))
 b = int(input("Insira o segundo número: "))
 
-print (f"\nAparte inteira de {a} dividido por {b} é {a/b} ")
+print (f"\nAparte inteira de {a} dividido por {b} é {a//b} ")
 print (f"\no resto de {a} dividido por {b} é {a%b}")
 print (f"\n35% do valor de {b} é {b*0.35}")
 
 ```
-
+## - 02. Faça um programa em Python que calcule o total de uma compra e a
+comissão do vendedor. Leia a matrícula do vendedor, considere uma compra
+com 3 produtos (para cada produto leia a quantidade e o valor por unidade) e
+uma comissão de 12% do valor total da compra. No final informe a matrícula do
+vendedor, o total da compra e a comissão do vendedor.
 ```py
+matricula = int(input("Insira sua matricula: "))
+
+item1 = int(input("Insira a quantidade do item 1: ")) 
+unidade1 = float(input("Insira o valor do item 1: ")) 
+
+item2 = int(input("Insira a quantidade do item 2: ")) 
+unidade2 = float(input("Insira o valor do item 2: ")) 
+
+item3 = int(input("Insira a quantidade do item 3: ")) 
+unidade3 = float(input("Insira o valor do item 3: ")) 
+
+totalCompra = (item1*unidade1) + (item2*unidade2) + (item3+unidade3)
+
+comissao = totalCompra * 0.12
+
+print (f"\nsua matricula é {matricula} ")
+print (f"o total da compra {totalCompra}, sua comissão é {comissao} ")
+
+
 
 ```
 ```py
