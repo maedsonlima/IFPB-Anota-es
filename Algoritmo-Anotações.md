@@ -580,25 +580,71 @@ Resolução
 6 é maior que 1  = verdadeiro
 
 como a proposição é AND, logo resultado é FALSO!
+---
+## - 08/10/2025 -  Continuação - Proposições lógicas.
 ```py
+print (6 + 5 == 11 and 5+5 == 10)
+print (5*3 == 15 or not(-30/2==15))
+
+print(not ("laranja" == "estojo"))
 
 ```
+Exemplo básicos da aula, retorno:
+
+True
+True
+True
+----
+### - Abreviação de atribuição:
+
 ```py
+#x = 10
+#x = x + 15
+
+x=10
+x+=5
+print(x)
 
 ```
+A operações são iguais
 
+x+=  QUER DIZER QUE É ELE MESMO + ALGUMA COISA QUE VOCÊ ESCOLHER
+
+Serve para outras operações.
+
+x+=
+x-=
+x*=
+x/=  é o proprio numero do x divido por algum numero dps do =
+**=
+%=
+//=
+
+ex:
 ```py
+x= 10
+x/= 2
+print(x)
 
 ```
+Resultado = 2.
+---
+---
+## - EXERCÍCIO - 
+
+01. Faça um programa em Python que leia dois números inteiros (A e B), realize
+os seguintes cálculos e exiba o resultado de cada cálculo.
+a) A parte inteira da divisão entre os valores de A e B
+b) O resto da divisão entre os valores de A e B
+c) O correspondente a 35 % do valor de B
 
 ```py
+a = int(input("Insira o primeiro número: "))
+b = int(input("Insira o segundo número: "))
 
-```
-```py
-
-```
-
-```py
+print (f"\nAparte inteira de {a} dividido por {b} é {a/b} ")
+print (f"\no resto de {a} dividido por {b} é {a%b}")
+print (f"\n35% do valor de {b} é {b*0.35}")
 
 ```
 
