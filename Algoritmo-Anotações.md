@@ -670,10 +670,14 @@ comissao = totalCompra * 0.12
 
 print (f"\nsua matricula é {matricula} ")
 print (f"o total da compra {totalCompra}, sua comissão é {comissao} ")
-
-
-
 ```
+---
+### 10/10/2025 - COMANDOS CONDICIONAIS
+
+
+
+
+
 ```py
 
 ```
