@@ -687,11 +687,35 @@ else:
 if (numero%2==0): Siginfiica
 
 se o resto da divisão do "numero" dividido por 2 é "==" a 0, então cumpre a condição.
+---
+Verificar se o número é menor que 1000, ou entre 100 e 1000 ou menor que 100
 ```py
+numero = int(input("Digite um numero: "))
+if (numero > 1000):
+    print("numero é maior que 1000")
+elif (numero>100):
+    print("numero entre 100 e  1000")
+else:
+    print("numero menor que 100")
 
 ```
+---
+Saber qual dos 3 numeros inseridos é maior
 
 ```py
+numero1 = int(input("Digite o primeiro numero: "))
+numero2 = int(input("Digite o segundo: "))
+numero3 = int(input("Digite o terceiro: "))
+
+if (numero1 >numero2 >numero3):
+    print("Numero 1 é maior")
+
+elif (numero2 >numero1 >numero3):
+ print("Numero 2 é maior")
+ 
+else:
+ print("Numero 3 é maior")
+                                                                                                                                                 
 
 ```
 ```py
