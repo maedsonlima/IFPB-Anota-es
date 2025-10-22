@@ -672,16 +672,21 @@ print (f"\nsua matricula é {matricula} ")
 print (f"o total da compra {totalCompra}, sua comissão é {comissao} ")
 ```
 ---
-### 10/10/2025 - COMANDOS CONDICIONAIS
+### 21/10/2025 - COMANDOS CONDICIONAIS - exercício
 
-
-
-
+## - Saber se o número é divisivel por 2:
 
 ```py
+numero = int(input("Digite um numero: "))
+if (numero%2==0):
+    print("numero é divisivel por 2")
+else:
+    print("numero não é divisivel por 2")
 
 ```
+if (numero%2==0): Siginfiica
 
+se o resto da divisão do "numero" dividido por 2 é "==" a 0, então cumpre a condição.
 ```py
 
 ```
