@@ -1,7 +1,6 @@
 # - LISTA DE EXERCÍCIOS 1 - 
 
-1. 1. Faça um programa que solicite ao usuário dois números e mostre todos os resultados de possíveis de operações relacionais entre eles, ou seja, deve mostrar todos os resultados das operações iniciando com um número e depois
-com outro. Por exemplo:
+1. Faça um programa que solicite ao usuário dois números e mostre todos os resultados de possíveis de operações relacionais entre eles, ou seja, deve mostrar todos os resultados das operações iniciando com um número e depois com outro. Por exemplo:
 
 ○ Usuário informa **6 e 8**
 
