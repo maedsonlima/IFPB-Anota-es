@@ -318,35 +318,179 @@ hr cria a linha, e dentro deles podemos inserir as cores como está acima
 
 ## Observações Importantes
 
-- Muitos inputs estão **sem `name`** → **sem `name`, o valor não é enviado** ao servidor.
-- Para upload funcionar, o formulário deve ser:
-  ```html
-  <form method="POST" action="processaform.html" enctype="multipart/form-data">
+# 📋 Listas em HTML — Explicação Completa
+
+As **listas em HTML** servem para organizar informações de forma estruturada e visual.  
+Elas podem ser:
+
+- 🔢 **Listas ordenadas** (com números, letras ou algarismos romanos)
+- ⚫ **Listas não ordenadas** (com marcadores)
+- 📖 **Listas de definição** (termos e descrições)
+
+---
+
+## 🔢 Lista Ordenada (`<ol>`)
+
+Uma **lista ordenada** mostra os itens em uma sequência definida, como 1, 2, 3… ou A, B, C…
+
+### 🧩 Como montar:
+Use a tag `<ol>` para criar a lista e `<li>` para cada item.
+
+```html
+<ol type="a">
+  <li>Flamengo</li>
+  <li>Vasco</li>
+  <li>Corinthians</li>
+  <li>São Paulo</li>
+  <li>Cruzeiro</li>
+</ol>
+
+| Tipo       | Resultado     | Descrição                     |
+| ---------- | ------------- | ----------------------------- |
+| `type="1"` | 1, 2, 3...    | Números (padrão)              |
+| `type="a"` | a, b, c...    | Letras minúsculas             |
+| `type="A"` | A, B, C...    | Letras maiúsculas             |
+| `type="i"` | i, ii, iii... | Algarismos romanos minúsculos |
+| `type="I"` | I, II, III... | Algarismos romanos maiúsculos |
+
+```
+⚫ Lista Não Ordenada (<ul>)
+
+Uma lista não ordenada mostra os itens com marcadores, em vez de números.
+
+🧩 Como montar:
+
+Use a tag <ul> para iniciar a lista e <li> para cada item.
+```html
+<ul type="disc">
+  <li>Flamengo</li>
+  <li>Vasco</li>
+  <li>Corinthians</li>
+  <li>São Paulo</li>
+  <li>Cruzeiro</li>
+</ul>
+
+```
+| Tipo            | Resultado | Descrição           |
+| --------------- | --------- | ------------------- |
+| `type="disc"`   | ●         | Padrão (bola cheia) |
+| `type="circle"` | ○         | Círculo vazio       |
+| `type="square"` | ■         | Quadrado            |
+| `type="none"`   | —         | Nenhum marcador     |
+
+
+📖 Lista de Definição (<dl>)
+
+As listas de definição servem para criar termos seguidos de suas explicações — como se fosse um glossário.
+
+🧩 Como montar:
+
+Use <dl> para iniciar a lista, <dt> para o termo, e <dd> para a descrição.
+```html
+<dl>
+  <dt>Título 1</dt>
+  <dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</dd>
+
+  <dt>Título 2</dt>
+  <dd>Beatae architecto, doloremque, quisquam.</dd>
+
+  <dt>Título 3</dt>
+  <dd>Consectetur adipisicing elit. Beatae, architecto!</dd>
+</dl>
+
+```
+🧱 Estrutura:
+
+<dl> → inicia a lista de definição
+
+<dt> → define o termo (título)
+
+<dd> → define a descrição do termo
+
+
+🌐 Listas Aninhadas (Listas dentro de outras)
+
+Você pode colocar uma lista dentro de outra, criando subníveis de organização.
+
+🧩 Exemplo:
+```html
+<ul type="disc">
+  <li>
+    São Paulo
+    <ol type="1">
+      <li>Santo André</li>
+      <li>São Bernardo</li>
+      <li>São Caetano</li>
+    </ol>
+  </li>
+</ul>
+
+<ul type="disc">
+  <li>
+    Paraíba
+    <ol type="1">
+      <li>Lagoa Seca</li>
+      <li>Lagoa de Dentro</li>
+      <li>Lagoa de Roça</li>
+    </ol>
+  </li>
+</ul>
+
+
 
 
 ``````html
 
 ```
+👉 Dica:
+A lista interna pode ser <ol> (ordenada) ou <ul> (não ordenada).
+Você pode misturar tipos conforme quiser.
 
+---
+🧱 Tabelas em HTML
+
+Tabelas organizam informações em linhas e colunas, ideais para dados estruturados.
+
+🧩 Exemplo:
 ```html
+<table border>
+  <tr>
+    <td colspan="3">L1 C1</td>
+  </tr>
+  <tr width="100%">
+    <td width="20%">L2 C1</td>
+    <td width="60%">L2 C2</td>
+    <td width="20%">L2 C3</td>
+  </tr>
+  <tr width="100%">
+    <td width="20%">L3 C1</td>
+    <td width="60%">L3 C2</td>
+    <td width="20%">L3 C3</td>
+  </tr>
+  <tr width="100%">
+    <td width="20%">L4 C1</td>
+    <td width="60%">L4 C2</td>
+    <td rowspan="2">L4 C3</td>
+  </tr>
+</table>
 
 ```
-
-``````html
-
-```
-
-```html
-
-```
-
-``````html
-
-```
-
-```html
-
-```
+🏷️ Resumo das Tags Usadas
+Tag	Função
+<ol>	Cria lista ordenada
+<ul>	Cria lista não ordenada
+<li>	Cria um item da lista
+<dl>	Cria uma lista de definição
+<dt>	Define o termo da lista de definição
+<dd>	Define a descrição do termo
+<table>	Cria uma tabela
+<tr>	Cria uma linha da tabela
+<td>	Cria uma célula da tabela
+colspan	Mescla colunas
+rowspan	Mescla linhas
+<br>	Quebra de linha
+<hr>	Linha divisória horizontal
+<p>	Define um parágrafo
 
 ``````html
 
