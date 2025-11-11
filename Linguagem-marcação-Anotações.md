@@ -492,7 +492,149 @@ rowspan	Mescla linhas
 <hr>	Linha divisória horizontal
 <p>	Define um parágrafo
 
+
+
+---
+---
+CÓDIGO PRONTO
 ``````html
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Prova de HTML</title>
+<style>
+    body {
+        background-color: #D3D3D3;
+        font-family: Arial, sans-serif;
+    }
+    table {
+        width: 100%;
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+    th, td {
+        border: 1px solid black;
+        padding: 5px;
+    }
+    .menu {
+        text-align: center;
+        font-weight: bold;
+        background-color: #E0E0E0;
+    }
+    .menu a {
+        margin: 0 20px;
+        text-decoration: none;
+        color: blue;
+        font-weight: bold;
+    }
+    .titulo {
+        font-weight: bold;
+        font-size: 24px;
+    }
+    .subtitulo {
+        font-weight: bold;
+        font-style: italic;
+    }
+    .form-tabela td:first-child {
+        width: 30%;
+    }
+    .form-tabela td:last-child {
+        width: 70%;
+    }
+    input[type="text"], input[type="password"], textarea {
+        width: 95%;
+    }
+    input[type="button"], input[type="submit"] {
+        margin: 5px;
+    }
+</style>
+</head>
+<body>
+
+<!-- MENU -->
+<table>
+    <tr class="menu">
+        <td rowspan="2" width="10%">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Thumbs_up_icon.svg/768px-Thumbs_up_icon.svg.png" width="70">
+        </td>
+        <td colspan="4">MENU DA PROVA</td>
+    </tr>
+    <tr class="menu">
+        <td><a href="#">HOME</a></td>
+        <td><a href="#">CONTEUDO1</a></td>
+        <td><a href="#">CONTEUDO2</a></td>
+        <td><a href="#">CONTATO</a></td>
+    </tr>
+    <tr>
+        <td colspan="5" align="center"><b>PROVA DE HTML</b></td>
+    </tr>
+</table>
+
+<!-- CONTEÚDO -->
+<h2 class="titulo">Titulo1</h2>
+<p><span class="subtitulo">Esse texto esta em negrito e em italico</span></p>
+
+<ul>
+    <li><b><u>Tarefas do dia de hoje</u></b>
+        <ol>
+            <li>trabalhar</li>
+            <li>estudar</li>
+            <li>fazer a prova</li>
+        </ol>
+    </li>
+    <li><b><u>Tarefas do dia de amanha</u></b>
+        <ol>
+            <li>dormir</li>
+            <li>acordar</li>
+            <li>dormir de novo</li>
+        </ol>
+    </li>
+</ul>
+
+<h2 class="titulo">Titulo2</h2>
+
+<!-- FORMULÁRIO -->
+<table class="form-tabela">
+    <tr>
+        <th colspan="2">FORM DA PROVA</th>
+    </tr>
+    <tr>
+        <td>NOME:</td>
+        <td><input type="text" name="nome"></td>
+    </tr>
+    <tr>
+        <td>LOGIN:</td>
+        <td><input type="text" name="login"></td>
+    </tr>
+    <tr>
+        <td>SENHA:</td>
+        <td><input type="password" name="senha"></td>
+    </tr>
+    <tr>
+        <td>GENERO:</td>
+        <td>
+            <input type="radio" name="genero" value="masculino"> MASCULINO
+            <input type="radio" name="genero" value="feminino"> FEMININO
+        </td>
+    </tr>
+    <tr>
+        <td>HOBBY:</td>
+        <td>
+            <input type="checkbox" name="hobby" value="esportes"> ESPORTES
+            <input type="checkbox" name="hobby" value="musica"> MUSICA
+            <input type="checkbox" name="hobby" value="cinema"> CINEMA
+            <input type="checkbox" name="hobby" value="praia"> PRAIA
+        </td>
+    </tr>
+    <tr>
+        <td>NOME:</td>
+        <td><textarea rows="3" placeholder="comente aqui...."></textarea></td>
+    </tr>
+    <tr>
+        <td colspan="2" align="center">
+            <input type="reset" value="Limpar">
+            <input
 
 ```
 
