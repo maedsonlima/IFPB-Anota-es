@@ -718,6 +718,14 @@ else:
                                                                                                                                                  
 
 ```
+---
+### - 12/11/2025 - FOR
+
+Tabuada de 1 a 10 usando for:
+```py
+for numero in range(1,11): 
+    for b in range(1,11):
+       print(f"{numero} x {b} = {numero*b}")
 ```py
 
 ```
